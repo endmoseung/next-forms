@@ -1,9 +1,6 @@
-import React from "react";
+import { delay } from "@/utils/delay";
 
 const Server1 = async () => {
-  const delay = (ms: number) =>
-    new Promise((resolve) => setTimeout(resolve, ms));
-
   await delay(1000);
 
   const random = Math.floor(Math.random() * 3) + 1;

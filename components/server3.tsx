@@ -1,9 +1,6 @@
-import React from "react";
+import { delay } from "@/utils/delay";
 
 const Server3 = async () => {
-  const delay = (ms: number) =>
-    new Promise((resolve) => setTimeout(resolve, ms));
-
   if (process.env.NODE_ENV === "production" && !process.env.RUNTIME) {
     return <div>Build-time request disabled</div>;
   }
