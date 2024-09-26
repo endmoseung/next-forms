@@ -1,4 +1,4 @@
-# Forms with Next.js and Server Actions
+# Next.JS Form 예시코드
 
 This example shows how you can build forms with Next.js and Server Actions.
 
