@@ -1,18 +1,12 @@
-import postgres from "postgres";
-
-let sql = postgres(process.env.DATABASE_URL || process.env.POSTGRES_URL!, {
-  ssl: "allow",
-});
-
 export default async function Home() {
-  // let todos = await sql`SELECT * FROM todos`;
-
   return (
     <main>
-      <h1 className="sr-only">Todos</h1>
-      {/* <AddForm /> */}
       <div>
-        <a href={"/testings"}>테스팅으로 이동</a>
+        <a href={"/testings"}>서스펜스 적용된 페이지</a>
+      </div>
+      <br />
+      <div>
+        <a href={"/nonSuspense"}>서스펜스 없는 페이지</a>
       </div>
       <br />
       <div>
@@ -26,14 +20,10 @@ export default async function Home() {
       <div>
         <a href={"/serverAction"}>서버액션</a>
       </div>
-      {/* <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>
-            {todo.text}
-            <DeleteForm id={todo.id} todo={todo.text} />
-          </li>
-        ))}
-      </ul> */}
+      <br />
+      <div>
+        <a href={"/parallelPage"}>parallel 라우트</a>
+      </div>
     </main>
   );
 }

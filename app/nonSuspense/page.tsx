@@ -5,20 +5,14 @@ import Server2 from "../../components/server2";
 import Server3 from "../../components/server3";
 import Loading from "@/components/Loading";
 
-export default async function Testings() {
+export default async function NonSuspense() {
   return (
     <div>
       <p>스태틱하다잉</p>
       <a href="/">뒤로가기</a>
-      <Suspense fallback={<Loading />}>
-        <Server1 />
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <Server2 />
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <Server3 />
-      </Suspense>
+      <Server1 />
+      <Server2 />
+      <Server3 />
       <ClientComponent />
     </div>
   );
