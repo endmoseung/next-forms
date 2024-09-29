@@ -5,6 +5,7 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   console.log(request.url, "리퀘스트에영");
 
+  // return NextResponse.redirect("https://www.naver.com");
   const response = NextResponse.next();
 
   //form데이터의 뒤로가기 양식 다시 제출 확인때문에 적용
