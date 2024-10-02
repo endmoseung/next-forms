@@ -1,10 +1,12 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const ClientActionComponent = () => {
+  const router = useRouter();
   const handleClickNormalAction = () => {
-    alert("일반액션!");
+    router.push("/");
   };
   return <button onClick={handleClickNormalAction}>일반액션 클릭</button>;
 };

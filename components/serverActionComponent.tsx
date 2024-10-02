@@ -1,11 +1,13 @@
 import { getPoke } from "@/server/poke";
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 
 const ServerActionComponent = () => {
   const handleClickServerAction = async () => {
     "use server";
     const data = await getPoke();
     revalidatePath("/serverAction");
+    redirect("/");
   };
 
   return (
