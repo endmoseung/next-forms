@@ -1,25 +1,17 @@
-# Next.JS Form 예시코드
+# Next.JS 예시코드
 
-This example shows how you can build forms with Next.js and Server Actions.
+이 예시코드들은 NextJS를 우아하게 사용하기 위한 방법들을 공유합니다.
 
-## Deploy your own
+## 어떤것들이 있나요?
+1. ServerAction과 ClientAction의 차이점
+2. ServerComponent with suspense
+3. pararell Route
+4. 이미지 컴포넌트 적용
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/next-forms&project-name=next-forms&repository-name=next-forms&stores=%5B%7B%22type%22%3A%22postgres%22%7D%5D)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
+## 사용법
 ```bash
-npx create-next-app --example next-forms next-forms-app
+yarn install or npm install
 ```
 
-```bash
-yarn create next-app --example next-forms next-forms-app
-```
 
-```bash
-pnpm create next-app --example next-forms next-forms-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Execute [`next-forms`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)를 참고하여 개발했습니다.
