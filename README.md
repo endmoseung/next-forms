@@ -14,4 +14,4 @@ yarn install or npm install
 ```
 
 
-Execute [`next-forms`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)를 참고하여 개발했습니다.
+[`next-forms`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)를 참고하여 개발했습니다.
