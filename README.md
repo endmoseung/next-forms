@@ -13,5 +13,12 @@
 yarn install or npm install
 ```
 
+## 환경설정
+```
+//.env
+// 사용중이신 로컬환경 주소값 입력
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
+
 
 [`next-forms`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)를 참고하여 개발했습니다.
